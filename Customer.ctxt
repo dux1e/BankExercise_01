@@ -5,4 +5,6 @@ comment1.params=name\ street\ postalCode\ town\ telephoneNo
 comment1.target=Customer(java.lang.String,\ java.lang.String,\ int,\ java.lang.String,\ java.lang.String)
 comment2.params=account
 comment2.target=void\ addAccount(BankAccount)
-numComments=3
+comment3.params=
+comment3.target=void\ getDetail()
+numComments=4

@@ -30,4 +30,12 @@ public class Customer
     }
     
     //Accessor Methods
+    public void getDetail() {
+        System.out.println(name);
+        System.out.println(street);
+        System.out.println(postalCode);
+        System.out.println(town);
+        System.out.println(telephoneNo);
+        System.out.println(myBankAccount.getBalance());
+    }
 }

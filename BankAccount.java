@@ -32,6 +32,7 @@ public class BankAccount {
      * NOTE!!!!
      * For the boolean to compile there must be a return true and return false in the statement
      */
+    /**
     public boolean withdraw(double amount) {
         if (amount <= balance) {
             //If the statement is true withdraw the amount of money
@@ -42,6 +43,7 @@ public class BankAccount {
             return false;
         }
     }
+    */
     
     /**
      * Boolean ifølge læren
