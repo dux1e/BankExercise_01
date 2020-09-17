@@ -15,6 +15,7 @@ public class Customer
     private String telephoneNo;
     private BankAccount myBankAccount;
     
+    
     //Constructor
     public Customer(String name, String street, int postalCode, String town, String telephoneNo) {
         this.name = name;
@@ -37,5 +38,6 @@ public class Customer
         System.out.println(town);
         System.out.println(telephoneNo);
         System.out.println(myBankAccount.getBalance());
+        System.out.println(myBankAccount.myAccountType.getAccountType());
     }
 }

@@ -8,12 +8,18 @@
 public class BankAccount {
     // instance variables for the balance
     private double balance;
+    private AccountType myAccountType;
 
     /**
      * Constructor for objects of class BankAccount
      */
     public BankAccount()
     {
+        balance = 0;
+    }
+    
+    public BankAccount(AccountType accType) {
+        this.myAccountType = accType;
         balance = 0;
     }
    
@@ -27,23 +33,7 @@ public class BankAccount {
     public void deposit(double amount) {
         balance += amount;
     }
-    /**
-     * Withdraw an amount from the bank account
-     * NOTE!!!!
-     * For the boolean to compile there must be a return true and return false in the statement
-     */
-    /**
-    public boolean withdraw(double amount) {
-        if (amount <= balance) {
-            //If the statement is true withdraw the amount of money
-            balance -= amount;
-            return true;
-        } else {
-            //Else dont give them money
-            return false;
-        }
-    }
-    */
+  
     
     /**
      * Boolean ifølge læren
@@ -58,10 +48,9 @@ public class BankAccount {
         return success;
     }
     
-    /**
-     * Accessor methods down here
-     * They ususally start with the return type fx int, String or double
-     */
+   
+    //Accessor methods down here
+     
     /**
      * Show balance for banking account
      */
@@ -82,6 +71,10 @@ public class BankAccount {
             //Else Return "You are not a millionaire"            
             System.out.println("You are not a millionaire");
         }
+    }
+    
+    public AccountType getAccountType() {
+        return myAccountType;
     }
 
 }
