@@ -38,6 +38,6 @@ public class Customer
         System.out.println(town);
         System.out.println(telephoneNo);
         System.out.println(myBankAccount.getBalance());
-        System.out.println(myBankAccount.myAccountType.getAccountType());
+        System.out.println(myBankAccount.getAccountType());
     }
 }
