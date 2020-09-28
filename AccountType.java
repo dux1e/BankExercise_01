@@ -28,8 +28,8 @@ public class AccountType
         return interest;
     }
 
-    public void getAccTypeDetail() {
-        System.out.println(accountType);
-        System.out.println(interest);
-    }
+    // public void getAccTypeDetail() {
+        // System.out.println(accountType);
+        // System.out.println(interest);
+    // }
 }
