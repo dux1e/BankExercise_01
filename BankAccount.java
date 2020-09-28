@@ -23,10 +23,11 @@ public class BankAccount {
         balance = 0;
     }
    
-     /**
-     * Mutator methods down here
-     * They usually start with void
-     */  
+    //Mutator methods
+    public void addAccountType(AccountType newAccType) {
+        myAccountType = newAccType;
+    }
+    
     /**
      * Add funds to banking account
      */

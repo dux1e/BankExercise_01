@@ -9,7 +9,7 @@ public class AccountType
 {
     // Instance Variables
     private String accountType;
-    private int interest;
+    private double interest;
 
     // Constructor
     public AccountType(String accountType, int interest) {
@@ -18,18 +18,20 @@ public class AccountType
     }
 
     // Mutator Methods
+    public void setAccType(String accountType) {
+        this.accountType = accountType;
+    }
+    
+    public void setInterest(double interest) {
+        this.interest = interest;
+    }
 
     // Accessor Methods
     public String getAccType() {
         return accountType;
     }
 
-    public int getInterest() {
+    public double getInterest() {
         return interest;
     }
-
-    // public void getAccTypeDetail() {
-        // System.out.println(accountType);
-        // System.out.println(interest);
-    // }
 }
