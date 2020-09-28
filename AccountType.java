@@ -7,24 +7,29 @@
  */
 public class AccountType
 {
-   // Instance Variables
-   private String accountType;
-   private int interest;
-   
-   // Constructor
-   public AccountType(String accountType, int interest) {
-       this.accountType = accountType;
-       this.interest = interest;
+    // Instance Variables
+    private String accountType;
+    private int interest;
+
+    // Constructor
+    public AccountType(String accountType, int interest) {
+        this.accountType = accountType;
+        this.interest = interest;
     }
-   
-   // Mutator Methods
-   
-   // Accessor Methods
-   public String getAccType() {
-       return accountType;
+
+    // Mutator Methods
+
+    // Accessor Methods
+    public String getAccType() {
+        return accountType;
     }
-    
-   public int getInterest() {
-       return interest;
+
+    public int getInterest() {
+        return interest;
+    }
+
+    public void getAccTypeDetail() {
+        System.out.println(accountType);
+        System.out.println(interest);
     }
 }

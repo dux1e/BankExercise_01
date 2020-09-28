@@ -7,4 +7,6 @@ comment2.params=
 comment2.target=java.lang.String\ getAccType()
 comment3.params=
 comment3.target=int\ getInterest()
-numComments=4
+comment4.params=
+comment4.target=void\ getAccTypeDetail()
+numComments=5

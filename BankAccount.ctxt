@@ -20,4 +20,6 @@ comment6.target=void\ checkIfMillionaire()
 comment6.text=\r\n\ You're\ rich\ \:)\r\n\ Da\ man\ ikke\ skal\ returne\ noget\ skal\ man\ ikke\ skrive\ \r\n\ public\ String\ men\ bare\ \ \ \r\n\ publig\ void\r\n
 comment7.params=
 comment7.target=AccountType\ getAccountType()
-numComments=8
+comment8.params=
+comment8.target=void\ getAccountTypeDetail()
+numComments=9

@@ -1,9 +1,9 @@
 #BlueJ package file
-dependency1.from=BankAccount
-dependency1.to=AccountType
+dependency1.from=Customer
+dependency1.to=BankAccount
 dependency1.type=UsesDependency
-dependency2.from=Customer
-dependency2.to=BankAccount
+dependency2.from=BankAccount
+dependency2.to=AccountType
 dependency2.type=UsesDependency
 editor.fx.0.height=1066
 editor.fx.0.width=1936
@@ -15,8 +15,8 @@ package.divider.horizontal=0.599476439790576
 package.divider.vertical=0.66
 package.editor.height=323
 package.editor.width=670
-package.editor.x=268
-package.editor.y=115
+package.editor.x=265
+package.editor.y=121
 package.frame.height=600
 package.frame.width=800
 package.numDependencies=2

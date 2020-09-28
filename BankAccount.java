@@ -76,5 +76,9 @@ public class BankAccount {
     public AccountType getAccountType() {
         return myAccountType;
     }
-
+    
+    public void getAccountTypeDetail() {
+        System.out.println(myAccountType.getAccType());
+        System.out.println(myAccountType.getInterest());
+    }
 }
