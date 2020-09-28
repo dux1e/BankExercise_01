@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=BankAccount
-comment0.text=\r\n\ This\ is\ a\ Class\ for\ the\ banking\ exercise\ 01\r\n\r\n\ @Jokke\r\n\ @1.0\r\n
+comment0.text=\r\n\ This\ is\ a\ Class\ for\ the\ banking\ exercise\ 01\r\n\r\n\ @author\ Joakim\ Christensen\r\n\ @version\ 29-09-2020\r\n
 comment1.params=
 comment1.target=BankAccount()
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ BankAccount\r\n

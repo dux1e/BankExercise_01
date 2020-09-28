@@ -2,8 +2,8 @@
 /**
  * Write a description of class Customer here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Joakim Christensen
+ * @version 29-09-2020
  */
 public class Customer
 {
@@ -38,10 +38,10 @@ public class Customer
         System.out.println("Kundens telefonnmummer er: " + telephoneNo);
         if(myBankAccount != null) {
             System.out.println("Kunden har " + myBankAccount.getBalance() + "DKK stående på sin konto");
+            myBankAccount.getAccountTypeDetail();
         } else {
             System.out.println("Kunden har ingen konti");
         }
-        myBankAccount.getAccountTypeDetail();
     }
 
 }

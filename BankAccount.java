@@ -2,8 +2,8 @@
 /**
  * This is a Class for the banking exercise 01
  *
- * @Jokke
- * @1.0
+ * @author Joakim Christensen
+ * @version 29-09-2020
  */
 public class BankAccount {
     // instance variables for the balance
@@ -78,7 +78,7 @@ public class BankAccount {
     }
     
     public void getAccountTypeDetail() {
-        System.out.println(myAccountType.getAccType());
-        System.out.println(myAccountType.getInterest());
+        System.out.println("The account type is: " + myAccountType.getAccType());
+        System.out.println("The interest is: " + myAccountType.getInterest());
     }
 }
