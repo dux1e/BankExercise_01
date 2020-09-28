@@ -79,7 +79,11 @@ public class BankAccount {
     }
     
     public void getAccountTypeDetail() {
-        System.out.println("The account type is: " + myAccountType.getAccType());
-        System.out.println("The interest is: " + myAccountType.getInterest());
+        if(myAccountType != null) {
+            System.out.println("The account type is: " + myAccountType.getAccType());
+            System.out.println("The interest is: " + myAccountType.getInterest());
+        } else {
+            System.out.println("Kontoen har ingen type");
+        }
     }
 }
