@@ -9,5 +9,5 @@ comment3.target=void\ removeCustomer(double)
 comment4.params=
 comment4.target=void\ printInfo()
 comment5.params=
-comment5.target=double\ getTotal()
+comment5.target=double\ getTotalBank()
 numComments=6
