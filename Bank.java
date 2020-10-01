@@ -8,8 +8,7 @@
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class Bank
-{
+public class Bank {
     // Instance variablese
     private String name;
     private ArrayList<Customer> customers;
@@ -25,22 +24,15 @@ public class Bank
         customers.add(customer);
     }
 
-    // public void removeCustomer(double threshold) {
-    // for(Customer customer : customers) {
-    // if(customer.getTotal() < threshold) {
-    // customers.remove(customer);
-    // }
-    // }
-    // } dette kan godt give fejl, det skal ændres til et while loop
-    // for loop er til aflæsning 
 
     public void removeCustomer(double balance) {
-        int i = 0;
-        boolean found = false;
-        while(i < customers.size() && !found) {
-            Customer customer = customers.getTotal();
-            customers.remove(customer);
-            i++;
+        Iterator<Customer> it = customers.iterator();
+        while(it.hasNext()) {
+            Customer customer = it.next();
+            customer.getTotal();
+            if(customer.getTotal() < balance) {
+                it.remove();
+            }
         }
     }
 
