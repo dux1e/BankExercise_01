@@ -24,12 +24,10 @@ public class Bank {
         customers.add(customer);
     }
 
-
     public void removeCustomer(double balance) {
         Iterator<Customer> it = customers.iterator();
         while(it.hasNext()) {
             Customer customer = it.next();
-            customer.getTotal();
             if(customer.getTotal() < balance) {
                 it.remove();
             }
@@ -50,11 +48,55 @@ public class Bank {
         }
     }
 
+    public int countPoorCustomersWhile(double balance) {
+        Iterator<Customer> it = customers.iterator();
+        int count = 0;
+        while(it.hasNext()) {
+            Customer customer = it.next();
+            if(customer.getTotal() < balance) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    public int countPoorCustomersFor(double balance) {
+        int count = 0;
+        for(Customer customer : customers) {
+            if(customer.getTotal() < balance) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    public Customer findCustomer(String name) {
+        Iterator<Customer> it = customers.iterator();
+        boolean found = false;
+        Customer customer = null;
+        while(!found && it.hasNext()) {
+            customer = it.next();
+            if(customer.getName().equals(name)) {
+                found = true;
+            }             
+        }
+        return customer;
+    }
+    
+    public ArrayList<Customer> getSomeCustomers(double threshold) {
+        ArrayList<Customer> returnList = new ArrayList<>();
+        for(Customer c : customers) {
+            if(c.getTotal() >= threshold) {
+                returnList.add(c);
+            }
+        }
+        return returnList;
+    }
+
     public double getTotalBank() {
         double grandTotal = 0;
         for(Customer customer : customers) {
-            double total = customer.getTotal();
-            grandTotal = total + grandTotal;
+            grandTotal = grandTotal + customer.getTotal();
         }
         return grandTotal;
     }

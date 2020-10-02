@@ -81,4 +81,8 @@ public class Customer
         }
         return total;
     }
+    
+    public String getName() {
+        return name;
+    }
 }
